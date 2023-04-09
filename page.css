@@ -1,0 +1,175 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: relative;
+    background: Black;
+}
+
+.navbar-left {
+    display: inline-block;
+}
+
+
+.navbar-brand,
+.navbar .nav-link {
+    color: White;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+.navbar-brand {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.navbar .nav-link:hover {
+    color: LightGray;
+}
+
+.navbar-collapse,
+.navbar-toggler {
+    display: none;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * *
+  * Override styles to support mobile devices
+  */
+
+@media (max-width: 842px) {
+
+    .navbar .nav-link {
+        display: block;
+    }
+
+    .navbar-collapse:checked+.navbar {
+        max-height: 500px;
+        overflow: hidden;
+    }
+
+    .navbar-toggler {
+        color: White;
+
+        display: inline-block;
+        padding: 15px 25px;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        border-left: 1px solid DimGray;
+
+        cursor: pointer;
+    }
+
+    .container .mon {
+        width: 520px;
+        height: 200px;
+        background-color: #e38f5e;
+        margin: 3px;
+        text-align: center;
+        float: left;
+    }
+
+    .footer-1 {
+        clear: both;
+        text-align: center;
+        background-color: orangered;
+        height: 270px;
+        padding-top: 10px;
+
+    }
+
+    .tab-content {
+        color: #FFF;
+        margin-left: 50px;
+        vertical-align: center;
+        text-align: left;
+        font-size: 17px;
+        margin-top: 5px;
+    }
+
+    .row .col-sm-5{
+        float: left;
+    }
+}
+
+/* @media */
+
+.nav-item {
+    padding-top: 20px;
+    font-family: Arial;
+    text-decoration: none;
+}
+
+ul li a:visited {
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.mon {
+    width: 300px;
+    height: 200px;
+    background-color: #e38f5e;
+    margin: 3px;
+    text-align: center;
+    float: left;
+}
+
+.tenmon {
+    margin-top: 5px;
+    vertical-align: bottom;
+    height: 40px;
+}
+
+.tenmon a {
+    font-weight: bold;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.tenmon a:hover {
+    color: black;
+    font-style: italic;
+}
+
+.hinh {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 150px;
+    height: 130px;
+    /*Các thuộc tính dùng để tạo hiểu ứng transform*/
+    transition: all 0.5s ease;
+
+}
+
+/*Tăng kích thước hình lên 1.1 khi rê chuột vào*/
+.hinh:hover {
+    transform: scale(1.1);
+}
+.imgs{
+    width: 250px;
+    height: 250px;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    background-color: orangered;
+    height: 250px;
+    padding-top: 10px;
+}
+
+footer>table {
+    color: #FFF;
+    margin-left: 400px;
+    vertical-align: center;
+    text-align: left;
+    font-size: 17px;
+    margin-top: 5px;
+}
